@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.device.Car;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -14,15 +16,13 @@ public class Main {
 
         me.pet = new Animal("Canis", 13.0);
 
-        Car passat = new Car("Passat", "VW");
+        Car passat = new Car("Passat", "VW", 1999);
         passat.color = "gray";
         passat.millage = 80000.0;
         passat.engineVolume = 1.9;
 
-        System.out.println("take auto: " + passat.producer + " " + passat.model);
+        passat.turnOn();
 
-        me.car = passat;
-        System.out.println("mam auto: " + me.car.model);
 
     }
 }
