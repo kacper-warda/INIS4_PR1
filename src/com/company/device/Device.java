@@ -5,6 +5,7 @@ public abstract class Device {
     public final String model;
     public final String producer;
     public final Integer yearOfProduction;
+    public Double value;
 
     public Device(String model, String producer, Integer yearOfProduction) {
         this.model = model;
@@ -13,5 +14,6 @@ public abstract class Device {
     }
 
     abstract public void turnOn();
+
 
 }
